@@ -1,0 +1,100 @@
+
+.input-container  {
+  background-color: rgb(113, 201, 204);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;;
+}
+
+/* .input-form {
+  margin-bottom: 200px;
+} */
+
+
+.input-ingredient,
+.input-case-amount,
+.input-quantity,
+.input-button {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0; 
+}
+
+.input-quantity {
+  margin-left: 8px;
+
+}
+
+.input {
+  margin-left: 10px;
+}
+
+.input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button {
+  border-radius: 16px;
+  height: 25px;
+}
+
+.output-container {
+  background-color: rgb(83, 170, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.output-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.output-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.generate-ingredient-cost {
+  background-color: rgb(173, 169, 170);
+  border-radius: 16px;
+  height: 35px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.calculate-total {
+  background-color: rgb(173, 169, 170);
+  border-radius: 16px;
+  height: 35px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.clear-page {
+  background-color: rgb(173, 169, 170);
+  border-radius: 16px;
+  height: 35px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+@media screen and (max-width: 360x) {
+  .input-container {
+    width: 100%; 
+  }
+  
+  .output-container {
+    width: 100%;
+  }
+}
