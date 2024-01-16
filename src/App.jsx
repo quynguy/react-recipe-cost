@@ -10,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div className='InputForm'>
+    <div className='React-Recipe-App'>
       <RecipeForm className='InputFormIngredients' onSubmit={addIngredient} />
       <RecipeCost className='InputFormCost' ingredients={ingredients} />
     </div>

@@ -8,7 +8,8 @@ const RecipeForm = ({ onSubmit }) => {
 
   return (
     <div className='input-container'>
-        <h1 className='text'></h1>
+        <h1 className='text'>Dish Dollars</h1>
+        <p className='text-p'> Your go-to app for generating precise per-unit and total recipe costs. </p>
         <div className='input-form'>
           <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -20,19 +21,20 @@ const RecipeForm = ({ onSubmit }) => {
 
             <div className='input-case-amount'>
               <label for='case-cost'> Case Cost 
-                <input className='input' placeholder="$/Case" type="number" step="0.01" {...register('costPerUnit')}/>
+                <input className='input' placeholder="Cost Per Case" type="number" step="0.01" {...register('costPerUnit')}/>
               </label>
             </div>
 
             <div className='input-quantity'>
               <label form='quantity-amount'> Quantity    
-                <input className='input' placeholder="Amount Per Case" type="number" step="1" {...register('quantity', {valueAsNumber: true})} />
+                <input className='input' placeholder="Quantity Per Case" type="number" step="1" {...register('quantity', {valueAsNumber: true})} />
               </label>
             </div>
 
             <div className='input-button'> 
               <button className='add-button' type="submit">Add Ingredient</button>
             </div>
+
           </form>
         </div>
     </div>
